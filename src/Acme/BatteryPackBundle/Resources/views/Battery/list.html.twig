@@ -1,0 +1,34 @@
+{% extends 'AcmeBatteryPackBundle::layout.html.twig' %}
+{% block title %}BatteryPack{% endblock %}
+{% block body -%}
+    <h1 class="title">Welcome to Recycle Batteries application</h1>
+
+    <p>Click <a href="{{ path('battery_new') }}">here</a> to add new batteries to the box</p>
+
+    Statistics:
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Battery Type</th>
+                <th>Total Count</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.type }}</td>
+                <td>{{ entity.tcount }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('battery') }}">
+                Battery Type Management
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

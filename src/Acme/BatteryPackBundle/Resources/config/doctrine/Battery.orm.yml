@@ -1,0 +1,18 @@
+Acme\BatteryPackBundle\Entity\Battery:
+    type: entity
+    repositoryClass: Acme\BatteryPackBundle\Entity\BatteryRepository
+    table: battery
+    id:
+        id:
+            type: integer
+            generator: { strategy : AUTO }
+    fields:
+        name:
+            type: string
+            length: 255
+        type:
+            type: string
+            length: 50
+        count:
+            type: integer
+            length: 11

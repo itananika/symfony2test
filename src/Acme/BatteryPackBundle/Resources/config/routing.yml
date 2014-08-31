@@ -1,0 +1,7 @@
+_welcome:
+    path:     /
+    defaults: { _controller: AcmeBatteryPackBundle:Battery:list }
+
+AcmeBatteryPackBundle_battery:
+    resource: "@AcmeBatteryPackBundle/Resources/config/routing/battery.yml"
+    prefix: battery

@@ -1,0 +1,7 @@
+parameters:
+#    battery_pack.example.class: Acme\BatteryPackBundle\Example
+
+services:
+#    battery_pack.example:
+#        class: %battery_pack.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

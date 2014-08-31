@@ -1,0 +1,4 @@
+battery_packy:
+    resource: "@AcmeBatteryPackBundle/Resources/config/routing.yml"
+    prefix:   /
+

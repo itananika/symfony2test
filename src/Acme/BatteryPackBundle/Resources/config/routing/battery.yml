@@ -1,0 +1,31 @@
+battery:
+    path:     /
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:index" }
+    prefix: battery
+
+battery_show:
+    path:     /{id}/show
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:show" }
+
+battery_new:
+    path:     /new
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:new" }
+
+battery_create:
+    path:     /create
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:create" }
+    requirements: { _method: post }
+
+battery_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:edit" }
+
+battery_update:
+    path:     /{id}/update
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:update" }
+    requirements: { _method: post|put }
+
+battery_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AcmeBatteryPackBundle:Battery:delete" }
+    requirements: { _method: post|delete }
