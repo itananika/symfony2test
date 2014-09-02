@@ -87,6 +87,7 @@ class BatteryController extends Controller
      */
     public function newAction()
     {
+        //todo: newAction and createAction should be one method. If form was not submitted (shown forst time) - isValid will return false. 
         $entity = new Battery();
         $form   = $this->createCreateForm($entity);
 
@@ -229,6 +230,8 @@ class BatteryController extends Controller
      * @return \Doctrine\Common\Persistence\ObjectRepository
      */
     private function _getBatteryRepository()
+    //todo: check code standarts for Symfony http://symfony.com/doc/current/contributing/code/standards.html
+    // Underscores are not used
     {
         return $this->getDoctrine()
             ->getManager()
