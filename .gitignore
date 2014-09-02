@@ -5,3 +5,5 @@
 /vendor/
 /app/config/parameters.yml
 /.idea
+
+#todo: You should not commit vendors into repository, but you did, maybe accidently. Check this http://symfony.com/doc/current/cookbook/workflow/new_project_git.html
